@@ -59,6 +59,9 @@
             ('include', 'test_assetsbundle.manifest4'),
         ],
         'test_assetsbundle.manifest_multi_module1': [],
+        'test_assetsbundle.broken_css': [
+            'test_assetsbundle/static/invalid_src/css/invalid_css.css',
+        ],
         'test_assetsbundle.lazy_test_component': [
             'test_assetsbundle/static/tests/lazy_test_component/**/*',
         ],
@@ -68,6 +71,15 @@
         'test_assetsbundle.multiple_broken_xml': [
             'test_assetsbundle/static/invalid_src/xml/invalid_xml.xml',
             'test_assetsbundle/static/invalid_src/xml/second_invalid_xml.xml',
+        ],
+        'test_assetsbundle.multiple_same_name':[
+          'test_assetsbundle/static/invalid_src/xml/multiple_same_name.xml',
+        ],
+        'test_assetsbundle.wo_name':[
+          'test_assetsbundle/static/invalid_src/xml/template_wo_name.xml',
+        ],
+        'test_assetsbundle.file_not_found':[
+          'test_assetsbundle/static/invalid_src/xml/file_not_found.xml',
         ],
     },
     'license': 'LGPL-3',
